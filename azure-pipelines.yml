@@ -1,0 +1,13 @@
+resources:
+- repo: self
+queue:
+  name: Hosted Ubuntu 1604
+steps:
+- task: Docker@1
+  displayName: 'ACR Login'
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryEndpoint: presidio
+    command: login
+- script: docker build -t $(DOCKER_REGISTRY)/$(Build.BuildID) .
+- script: docker push $(DOCKER_REGISTRY)/$(Build.BuildID)
