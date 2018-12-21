@@ -9,5 +9,5 @@ steps:
     containerregistrytype: 'Container Registry'
     dockerRegistryEndpoint: presidio
     command: login
-- script: docker build -t $(DOCKER_REGISTRY)/$(Build.BuildID) .
-- script: docker push $(DOCKER_REGISTRY)/$(Build.BuildID)
+- script: docker build -t $(DOCKER_REGISTRY)/presidio-demo-website:$(Build.BuildID) .
+- script: docker push $(DOCKER_REGISTRY)/presidio-demo-website:$(Build.BuildID)
