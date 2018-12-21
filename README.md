@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/csedevil/Presidio/_apis/build/status/Presidio-demo-website?branchName=master)](https://dev.azure.com/csedevil/Presidio/_build/latest?definitionId=56?branchName=master)
+
 # Presidio Demo Website
 
 [Demo website](https://presidio-demo.westeurope.cloudapp.azure.com/) to display the capabilities of [presidio](https://github.com/Microsoft/presidio).
